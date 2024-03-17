@@ -1,7 +1,6 @@
 import csv
-import os
 
-csvpath = os.path.join('Resources','budget_data.csv')
+csvpath =r'D:\Classwork\Class Notes\Wk3\Wk3 homework\Starter_Code (1)\Starter_Code\PyBank\Resources\budget_data.csv'
 
 with open(csvpath) as csvfile:
 #Initialising reader to read csvfile
@@ -49,6 +48,6 @@ output = f'''  Financial Analysis
   
   '''
 print(output)
-csvpath = os.path.join('Analysis','Financial_Analysis.txt')
+csvpath = r'D:\Classwork\Class Notes\Wk3\Wk3 homework\Starter_Code (1)\Starter_Code\PyBank\Resources\Financial_Analysis.txt'
 with open(csvpath,'w') as textfile:
     textfile.write(output)
