@@ -1,8 +1,7 @@
-
 import csv
+import os
 
-
-csvpath = r'D:\Classwork\Class Notes\Wk3\Wk3 homework\Starter_Code (1)\Starter_Code\PyBank\Resources\budget_data.csv'
+csvpath = os.path.join('Resources','budget_data.csv')
 
 with open(csvpath) as csvfile:
 #Initialising reader to read csvfile
@@ -47,3 +46,9 @@ output = f'''  Financial Analysis
   Average Change: ${round(sum(changes)/(len(changes)),2)}
   Greatest Increase in Profits: {budget_data[index_max_change+1][0]} (${max(changes)})
   Greatest Decrease in Profits: {budget_data[index_max_loss+1][0]} (${min(changes)})
+  
+  '''
+print(output)
+csvpath = os.path.join('Analysis','Financial_Analysis.txt')
+with open(csvpath,'w') as textfile:
+    textfile.write(output)
