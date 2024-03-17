@@ -1,23 +1,17 @@
 First:
 
 New repository created for this project called python-challenge
-
 Cloned repository to my computer.
-
 Inside the local git repository I have created a directory for each Python challenge. With folder names corresponding to the challenges: PyBank and PyPoll.
-
 Inside of each folder are the following:
 
       A new file called main.py. The main script to run for each analysis.
       A Resources folder that contains the CSV files used. Including correct csv_path
       An analysis folder that contains a text file with the results from the analysis.
-
 Pushed to GitHub.
 
 PyBank Challenge:
-
 Created a Python script to analyze the financial records of a company. Using a set of financial data called budget_data.csv. The dataset is composed of two columns: "Date" and "Profit/Losses".
-
 Created a Python script that analyzes the records to calculate each of the following:
 
       The total number of months included in the dataset
@@ -39,9 +33,7 @@ The Financial Analysis looks similar to the following:
 In addition the final script prints the analysis to the terminal and exports a text file with the results.
 
 PyPoll Instructions:
-
 In this challenge the task is helping a small, rural town modernize its vote counting process.
-
 Using a set of poll data called election_data.csv. The dataset is composed of three columns: "Voter ID", "County", and "Candidate". The task is to create a Python script that analyzes the votes and calculates each of the following:
 
       The total number of votes cast
