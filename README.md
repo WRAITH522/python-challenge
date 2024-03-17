@@ -8,7 +8,10 @@ Inside the local git repository I have created a directory for each Python chall
 
 Inside of each folder are the following:
 
-A new file called main.py. The main script to run for each analysis.
-A Resources folder that contains the CSV files used. Including correct csv_path
-An analysis folder that contains a text file with the results from the analysis.
+  A new file called main.py. The main script to run for each analysis.
+
+  A Resources folder that contains the CSV files used. Including correct csv_path
+
+  An analysis folder that contains a text file with the results from the analysis.
+
 Pushed to GitHub.
