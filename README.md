@@ -63,3 +63,5 @@ The Polling Analysis looks similar to the following:
       -------------------------
 
 In addition the final script prints the analysis to the terminal and exports a text file with the results.
+
+#Resources: https://github.com/khadra1/python-challenge/tree/main
