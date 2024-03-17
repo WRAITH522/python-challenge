@@ -1,6 +1,7 @@
 First:
 
 New repository created for this project called python-challenge 
+
 Cloned repository to my computer. 
 
 Inside the local git repository I have created a directory for each Python challenge. With folder names corresponding to the challenges: PyBank and PyPoll. 
