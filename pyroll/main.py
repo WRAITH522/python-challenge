@@ -1,7 +1,6 @@
 import csv
-import os
 
-csvpath = os.path.join('Resources','election_data.csv')
+csvpath = r'D:\Classwork\Class Notes\Wk3\Wk3 homework\Starter_Code (1)\Starter_Code\PyPoll\Resources\election_data.csv'
 
 total_votes = 0 
 candidate_list = []
@@ -32,7 +31,7 @@ with open(csvpath, newline="") as csvfile:
             
             candidate_dict[candidate] +=1 
 
-output_file = os.path.join('Analysis','election_results.txt')
+output_file = r'D:\Classwork\Class Notes\Wk3\Wk3 homework\Starter_Code (1)\Starter_Code\PyPoll\Resources\election_results.txt'
 with open(output_file, "w", newline="") as datafile:
     
     # print the total votes 
