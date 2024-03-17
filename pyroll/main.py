@@ -1,7 +1,7 @@
-
 import csv
+import os
 
-csvpath = r'D:\Classwork\Class Notes\Wk3\Wk3 homework\Starter_Code (1)\Starter_Code\PyPoll\Resources\election_data.csv'
+csvpath = os.path.join('Resources','election_data.csv')
 
 total_votes = 0 
 candidate_list = []
@@ -12,7 +12,7 @@ winner = ""
 
 with open(csvpath, newline="") as csvfile:
 
-        csvreader = csv.reader(csvfile, delimiter=",")
+        csvreader = csv.reader(csvfile)
         reader = csv.reader(csvfile)
         next(reader, None)
 
@@ -32,7 +32,7 @@ with open(csvpath, newline="") as csvfile:
             
             candidate_dict[candidate] +=1 
 
-output_file = 'election_results.txt'
+output_file = os.path.join('Analysis','election_results.txt')
 with open(output_file, "w", newline="") as datafile:
     
     # print the total votes 
@@ -48,7 +48,7 @@ with open(output_file, "w", newline="") as datafile:
     
     # loop through the candidates and calculate their percentage of the votes 
     for candidate in candidate_dict: 
-        percentage = round(float(candidate_dict[candidate])/float(total_votes),2)
+        percentage = round(float(candidate_dict[candidate])/float(total_votes),5)
 
         print(f"{candidate}: {percentage:.3%} ({candidate_dict[candidate]})\n")
         datafile.write(f"{candidate}: {percentage:.3%} ({candidate_dict[candidate]})\n")
