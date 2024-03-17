@@ -1,8 +1,8 @@
 First:
 
-New repository created for this project called python-challenge
-Cloned repository to my computer.
-Inside the local git repository I have created a directory for each Python challenge. With folder names corresponding to the challenges: PyBank and PyPoll.
+New repository created for this project called python-challenge /n
+Cloned repository to my computer. /n
+Inside the local git repository I have created a directory for each Python challenge. With folder names corresponding to the challenges: PyBank and PyPoll. /n
 Inside of each folder are the following:
 
       A new file called main.py. The main script to run for each analysis.
