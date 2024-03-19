@@ -1,8 +1,9 @@
 import csv
+import os
 
-csvpath =r'D:\Classwork\Class Notes\Wk3\Wk3 homework\Starter_Code (1)\Starter_Code\PyBank\Resources\budget_data.csv'
+csvpath =os.path.join('Resources', 'budget_data.csv')
 
-with open(csvpath) as csvfile:
+with open(csvpath, encoding= 'utf') as csvfile:
 #Initialising reader to read csvfile
     csvreader = csv.reader(csvfile)
    #Skipping the first row (header)
@@ -48,6 +49,6 @@ output = f'''  Financial Analysis
   
   '''
 print(output)
-csvpath = r'D:\Classwork\Class Notes\Wk3\Wk3 homework\Starter_Code (1)\Starter_Code\PyBank\Resources\Financial_Analysis.txt'
+csvpath = os.path.join('Analysis', 'Financial_Analysis.txt')
 with open(csvpath,'w') as textfile:
     textfile.write(output)
